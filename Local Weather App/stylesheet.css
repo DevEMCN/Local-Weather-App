@@ -1,0 +1,70 @@
+body
+{
+	background-image: url("http://www.3dportfolio.de/bilder/Earth_by_3DPORFTOLIO_04.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	width: 500px;
+	margin: 0 auto;
+}
+
+h1
+{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#weatherBtnDiv
+{
+	margin: 0 0 100px 65px;
+}
+
+#getWeatherData
+{
+
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+.info
+{
+	height: 100px;
+	width: 150px;
+	border-radius: 25px;
+	background-color: rgba(238, 238, 238, 0.5);
+	margin-left: 200px;
+	margin-bottom: 20px;
+}
+
+.info p 
+{
+	position: relative;
+	top: 40px;
+	left: 20px;
+}
+
+#measurementBtn
+{
+	position: relative;
+	top: 5px;
+	left: 80px;
+}
+	
+
