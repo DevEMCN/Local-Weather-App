@@ -34,11 +34,12 @@ $(document).ready(function()
        temperature = json.currently.temperature;
        icon = json.currently.icon;
        summary = json.currently.summary;
-       $("body").css({'background-image' : 'url('+ getBackgroundImage(icon)+')', 'background-repeat' : 'no-repeat', 'background-size' : 'cover'});
+     
+       $("body").css({'background-image' : 'url('+ getBackgroundImage(icon) +')', 'background-repeat' : 'no-repeat', 'background-size' : 'cover'});
        $("#temperature").text(temperature + ' F°');
        $("#summary").text(summary);
     });
-    $.getJSON("http://api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
+    $.getJSON("//api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
     {
       $("#location").text(json.geonames[0].name + ", " + json.geonames[0].countryCode);
     });
