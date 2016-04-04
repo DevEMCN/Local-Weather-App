@@ -39,7 +39,7 @@ $(document).ready(function()
        $("#temperature").text(temperature + ' F°');
        $("#summary").text(summary);
     });
-    $.getJSON("//api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
+    $.getJSON("https://api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
     {
       $("#location").text(json.geonames[0].name + ", " + json.geonames[0].countryCode);
     });
