@@ -39,10 +39,21 @@ $(document).ready(function()
        $("#temperature").text(temperature + ' F°');
        $("#summary").text(summary);
     });
-    $.getJSON("//api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
-    {
-      $("#location").text(json.geonames[0].name + ", " + json.geonames[0].countryCode);
-    });
+    // $.getJSON("//api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?", function(json)
+    // {
+    //   $("#location").text(json.geonames[0].name + ", " + json.geonames[0].countryCode);
+    // });
+    $.ajax({
+          type: "GET",
+          url: "//api.geonames.org/findNearbyPlaceNameJSON?lat=" + latitude + "&lng=" + longitude +"&username=demo&callback=?",
+          contentType: "application/json; charset=utf-8",
+          async: false,
+          dataType: "json",
+          success: function (data) 
+          {
+            $("#location").text(data.geonames[0].name + ", " + data.geonames[0].countryCode);           
+      }
+        });
 
 
   });
