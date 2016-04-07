@@ -3,7 +3,7 @@ See the weather conditions in your area
 
 <h2>Free Code Camp - Intermediate Project #2</h2>
 
-<a href="https://htmlpreview.github.io/?https://github.com/DevEMCN/Local-Weather-App/blob/master/Local%20Weather%20App/index.html">See Preview Here</a>
+<a href="http://codepen.io/devemcn/full/xVrrXX/">See Preview Here</a>
 
 User Stories: <br/>
 No.1 I can see the weather in my current location.
